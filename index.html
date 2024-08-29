@@ -2,27 +2,126 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <header>
+      <h1>Information about Samruddhi Naik</h1>
+    </header>
+    
+    <div id="ani">
+      
+    </div>
+    
+    <script>
+      const div = document.getElementById('ani');
+      let pos = 0;
+      let dir = 1;
+      
+      function move(){
+        pos += 5 * dir;
+        if (pos <= 0 || pos > window.innerWidth - div.offsetWidth) {
+          dir = dir * -1;
+        }
+        div.style.left = pos + "px";
+      }
+      
+      setInterval(move, 45);
+      
+    </script>
+    
+    <p id="about">
+      Hi! My name is Samruddhi but you can also call me Sam. I'm a junior at <a href="https://www.wpi.edu/">WPI</a> graduating in 2026. 
     </p>
-    <p>
-      [Major and other information]
+    
+    <p id="major">
+      I'm a Computer Science major with a minor in Robotics Engineering.
     </p>
-    <p>
-      [Other things]
-    </p>
+    
+    <div id="courses">
+      <h4>
+        Computer Science courses taken:
+      </h4>
+      <ul>
+        <li>2102</li>
+        <li>2303</li>
+        <li>2223</li>
+        <li>3041</li>
+        <li>3043</li>
+        <li>3431</li>
+        <li>3516</li>
+        <li>3733</li>
+      </ul>
+    </div>
+    
 
-    <h2>Experience</h2>
+    <h3>Experience</h3>
+    
+    <div>
+      <h4 id="work">
+        Working experience
+      </h4>
+      <ul id="jobs">
+        <li>Peer Learning Assistant for WPI CS Department</li>
+        <li>AI Project Worker/Intern at WPI</li>
+        <li>Kumon Student Learner Assistant</li>
+      </ul>
+    </div>
+    
     <p>
-      Working experience
+      
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    
+    <div id="tech">
+      <h4>
+        Experience with Technologies
+      </h4>
+
+      <table>
+        <tr>
+          <th>Language</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>Some</td>
+        </tr>
+      </table>
+    </div>
+    
+    <img src="https://img.freepik.com/premium-vector/cute-robot-waving-hand-cartoon-illustration_138676-2744.jpg?w=740">
+    
+    <footer>
+      The End!
+    </footer>
+    
   </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  padding: 5px;
+  background-color: #8BDAFF;
+}
+
+div {
+  background-color: #4C91B6;
+  padding: 5px;
+}
+
+#ani {
+  background-color: #4C91B6;
+  width: 50px;
+  position: absolute;
+}
+
+header {
+  color: #224050;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #224050;
+}
+
+h4 {
+  color: #305B72;
+}
+
+li {
+  color: #305B72;
+}
+
+#jobs {
+  color: #305B72;
+}
+
+p {
+  color: #305B72;
+}
+
+#about {
+  color: #305B72;
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+table, th, td {
+  color: #305B72;
+  border: 1px solid;
+  border-color: #224050;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 20%;
+    
+}
+
+footer {
+  padding: 5px;
+  color: #305B72;
+  text-align: center
+}
